@@ -358,6 +358,6 @@ def student_list(request):
     }
     return render(request,'student/list.html',ctx)
 
-@login_required_decorator
-def profile(request):
-    return render(request,'profile.html')
+
+
+
