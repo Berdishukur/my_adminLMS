@@ -357,7 +357,9 @@ def student_list(request):
         "students":students
     }
     return render(request,'student/list.html',ctx)
-
+@login_required_decorator
+def profile(request):
+    return render(request,'profile.html')
 
 
 
